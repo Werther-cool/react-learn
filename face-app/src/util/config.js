@@ -1,5 +1,5 @@
-const APIV1 ="http://192.168.202.02:8057";
-// const APIV1 = "http://smart.dtyunxi.com:8057";
+// const APIV1 ="http://192.168.202.02:8057";
+const APIV1 = "http://smart.dtyunxi.com:8057";
 module.exports ={
   api: {
     /* 获取已经根据活动注册用户匹配拍摄头像的数据 */

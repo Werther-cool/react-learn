@@ -4,8 +4,6 @@ import  './myLayout.css';
 import Potential from "./Potential";
 import Mathced from "./Mached"
 import Home from "./Home";
-import Demo from "./Demo";
-
 import {
   BrowserRouter as Router,
   Route,
@@ -45,7 +43,6 @@ class MyLayout extends  React.Component {
           <Menu.Item key="1"><Link to="/">访客</Link></Menu.Item>
           <Menu.Item key="2"><Link to="/potential">潜客</Link></Menu.Item> 
           <Menu.Item key="3"><Link to="/mached">会员</Link></Menu.Item> 
-          <Menu.Item key="4"><Link to="/demo">demo</Link></Menu.Item> 
         </Menu>
       </Header>
       <Layout>
@@ -87,7 +84,7 @@ class MyLayout extends  React.Component {
             <Route exact path="/" component={Home}/>
             <Route  path="/potential" component={Potential}/>
             <Route  path="/mached" component={Mathced}/>
-            <Route  path="/demo" component={Demo}/>
+         
           </Content>
         </Layout>
       </Layout>
