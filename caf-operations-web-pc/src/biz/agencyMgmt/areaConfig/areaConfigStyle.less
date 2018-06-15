@@ -1,0 +1,65 @@
+/**
+ * @(#)areaConfigStyle.less 0.1.0 2018-3-26
+ * Copyright (c) 2017, YUNXI. All rights reserved.
+ * YUNXI PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ */
+
+@import '../../../config/basic.less';
+
+.treeActionButton{
+  padding: 0 0 16px 16px;
+  button{
+    margin-right: 8px;
+    padding: 0 8px;
+  }
+  i{
+    margin-right: 0px !important;
+    font-size: 12px;
+  }
+  p{
+    color: #CCCCCC;
+    margin: 16px 0 0 0;
+  }
+}
+
+.classify{
+  //border-top: 1px solid #EFEFF1;
+  margin: 0 16px 0 3px;
+  h2{
+    font-size: 14px;
+    //margin-top: 24px;
+    &:before{
+      content: '';
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      margin-right: 8px;
+      height: 14px;
+      width: 3px;
+      border-radius: 4px;
+      background-color: @uiColor_1;
+    }
+  }
+}
+
+.choicedName{
+  background: #FFFFFF;
+  border: 1px solid #EFEFF1;
+  border-radius: 4px;
+  padding:20px 20px 10px 20px;
+  span{
+    margin-right:10px;
+    margin-bottom: 10px;
+    padding: 4px 17px;
+    background-color: @uiColor_2;
+    border-radius: 3px;
+    display: inline-block;
+    i{
+      position: relative;
+      left: 11px;
+      font-weight: bold;
+      cursor: pointer;
+      color: @uiColor_1;
+    }
+  }
+}
