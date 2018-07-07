@@ -1,0 +1,60 @@
+@import '../../../../config/basic.less';
+
+
+.marRight {
+  margin-right:20px;
+}
+.marBottom {
+  margin-bottom:10px;
+}
+
+.main {
+  border: 1px #EFF0F2 solid;
+  & > span {
+    display: inline-block;
+    padding: 6px;
+  }
+  .item {
+    min-width: 120px;
+    margin-right: 24px;
+  }
+  .action {
+    border-left: 1px #EFF0F2 solid;
+    width: 101px;
+    float: right;
+  }
+  &::after {
+    display: block;
+    content: '.';
+    height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+}
+
+.offerList {
+  :global {
+    .ant-table-wrapper {
+      .ant-spin-nested-loading {
+        .ant-spin-container {
+          .ant-table.ant-table-large.ant-table-scroll-position-left {
+            .ant-table-content {
+              .ant-table-body {
+                table {
+                  border: 0;
+                  border-collapse: collapse;
+                  thead {
+                    border: 1px #EFF0F2 solid;
+                  }
+                }
+                .ant-table-tbody > tr > td {
+                  border-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

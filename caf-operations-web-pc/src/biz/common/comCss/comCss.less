@@ -1,0 +1,72 @@
+/*-------------------详情页面的公用样式----------------*/
+
+/*  使用方式
+  * 1、引用该文件 import comCss from '../../common/comCss/comCss.less'
+  * 2、'不需要上边框去掉 comLi_top'
+*/
+
+
+/*两列HTML结构
+  <div className={comCss.comLi + ' ' + comCss.comLi_top}>
+    <div className={comCss.comLi_left}>
+      <div className={comCss.comLi_name}>签约厂商：</div>
+      <div className={comCss.comLi_content}>{shopsDetailMod.detailsShopData.signedSeller}</div>
+    </div>
+    <div className={comCss.comLi_right}>
+      <div className={comCss.comLi_name}>客服QQ：</div>
+      <div className={comCss.comLi_content}>
+
+      </div>
+    </div>
+  </div>
+
+  一列HTML结构
+  <div className={comCss.comLi}>
+    <div className={comCss.comLi_name}>店铺简介：</div>
+    <div className={comCss.comLi_content}>{shopsDetailMod.detailsShopData.shopIntroduction}</div>
+  </div>
+*/
+
+.comLi_left, .comLi_right{
+  //float: left;
+  width: 50%;
+  height: 100%;
+}
+.comLi{
+  min-height: 48px;
+  line-height: 48px;
+  border-bottom: 1px solid #EFF0F2;
+  overflow: hidden;
+  font-weight: normal;
+  position: relative;
+}
+.comLi_top{
+  border-top: 1px solid #EFF0F2;
+}
+.comLi_left{
+  float: left;
+}
+.comLi_right{
+  margin-left: 50%;
+}
+.comLi_aloneLine{
+  width: 100%;
+}
+.comLi_name{
+  width: 100px;
+  text-align: right;
+  background: #FBFBFB;
+  color: #666;
+  float: left;
+  padding-right: 10px;
+  height: 100%;
+  position: absolute;
+}
+.comLi_content{
+  margin-left: 110px;
+  margin-right: 10px;
+  word-wrap:break-word
+}
+.comLi_aloneLine{
+
+}
